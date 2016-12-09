@@ -1,0 +1,136 @@
+@import "variables";
+@import "fonts";
+@import "buttons";
+
+html, body{
+  margin: 0;
+  padding:0;
+  height: 100%;
+  width: 100%;
+}
+
+body{
+  .slideIcon{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 999999;
+  }
+  section{
+    position: relative;
+    &.panel-start{
+      padding: 40px 0 0 0;
+      margin-bottom: -40%;
+      .apple-store,.google-play{
+        cursor: pointer;
+      }
+      .telePic{
+        width: 350px;
+        margin: 0 auto;
+        position: relative;
+      }
+    }
+    &.panel-acc{
+      padding: 40px 0 70px 0;
+      transform: skew(0,10deg);
+      color: white;
+      z-index:2;
+    }
+    &.panel-01{
+      margin: -80px auto -80px auto;
+      padding: 120px 0 0 0;
+      .telePic{
+        width: 350px;
+        margin: 0 auto;
+      }
+    }
+    &.panel-02{
+      padding: 40px 0 0 0;
+      color: white;
+      transform: skew(0,10deg);
+      .tele-pic02{
+        margin: 0 auto;
+        position: relative;
+        right: 10px;
+      }
+      .number{
+        color: black;
+        background-color: white;
+        border-color: white;
+      }
+    }
+    &.panel-03{
+      transform: skew(0,10deg);
+      color: white;
+      z-index:2;
+      margin-top: -40px;
+      padding: 40px 0 0 0;
+      overflow: hidden;
+      .number{
+        color: orange;
+        background-color: white;
+        border-color: white;
+      }
+      .card-pic{
+        width: 100%;
+        position: relative;
+        bottom: -60px;
+        margin:0 auto;
+      }
+    }
+    &.panel-04{
+      padding: 160px 0 0px 0;
+      margin-top: - 60px;
+      .end-wish{
+        position: relative;
+        bottom: 150px;
+        padding: 60px 0 60px 0;
+        background-color: orange;
+        transform: skew(0,10deg);
+        color: white;
+        z-index:2;
+      }
+      .tele-pic04{
+        width: 350px;
+        position: relative;
+        z-index:4;
+        margin: 0 auto;
+      }
+    }
+    &.bg-primary{
+      background: blue url('../images/bg-primary.jpg') center center no-repeat;
+      background-size: cover;
+    }
+    &.bg-color{
+      background-color: orange;
+    }
+    &.bg-custom{
+      background: url('../images/bg-custom.jpg') center center no-repeat;
+      background-size: cover;
+    }
+    .container{
+      &.contSkew{
+        transform: skew(0, -10deg);
+      }
+    }
+    .highlight{
+      background-color: #ffab57;
+      padding: 0 5px 0 5px;
+    }
+    .number{
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      vertical-align: middle;
+      width: 100px;
+      height: 100px;
+      border-radius: 50px;
+      background-color: black;
+      background-clip: content-box;
+      border: 1px solid black;
+      padding: 5px;
+      color: white;
+    }
+  }
+}

@@ -1,0 +1,140 @@
+body {
+  font-size: 70px; }
+
+@font-face {
+  font-family: 'Bebas Neue Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local("../fonts/Bebas Neue Bold"), url("BEBASNEUE BOLD.woff") format("woff"); }
+
+body {
+  font-family: 'Bebas Neue';
+  text-align: center; }
+  body h1 {
+    color: orange; }
+  body section button {
+    text-align: center;
+    font-family: 'Bebas Neue'; }
+    body section button h2 {
+      letter-spacing: 4px;
+      font-size: 30px;
+      margin: 0 0 5px 0; }
+    body section button p {
+      letter-spacing: 3px;
+      font-size: 20px;
+      margin: 5px 0 0 0;
+      padding: 0 20px 0 20px; }
+
+.acc-button {
+  padding: 15px 120px 15px 120px;
+  cursor: pointer;
+  color: orange;
+  background: white url("../images/acc-arrow.png") 80% center no-repeat;
+  box-shadow: none;
+  border: none; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%; }
+
+body .slideIcon {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 999999; }
+
+body section {
+  position: relative; }
+  body section.panel-start {
+    padding: 40px 0 0 0;
+    margin-bottom: -40%; }
+    body section.panel-start .apple-store, body section.panel-start .google-play {
+      cursor: pointer; }
+    body section.panel-start .telePic {
+      width: 350px;
+      margin: 0 auto;
+      position: relative; }
+  body section.panel-acc {
+    padding: 40px 0 70px 0;
+    transform: skew(0, 10deg);
+    color: white;
+    z-index: 2; }
+  body section.panel-01 {
+    margin: -80px auto -80px auto;
+    padding: 120px 0 0 0; }
+    body section.panel-01 .telePic {
+      width: 350px;
+      margin: 0 auto; }
+  body section.panel-02 {
+    padding: 40px 0 0 0;
+    color: white;
+    transform: skew(0, 10deg); }
+    body section.panel-02 .tele-pic02 {
+      margin: 0 auto;
+      position: relative;
+      right: 10px; }
+    body section.panel-02 .number {
+      color: black;
+      background-color: white;
+      border-color: white; }
+  body section.panel-03 {
+    transform: skew(0, 10deg);
+    color: white;
+    z-index: 2;
+    margin-top: -40px;
+    padding: 40px 0 0 0;
+    overflow: hidden; }
+    body section.panel-03 .number {
+      color: orange;
+      background-color: white;
+      border-color: white; }
+    body section.panel-03 .card-pic {
+      width: 100%;
+      position: relative;
+      bottom: -60px;
+      margin: 0 auto; }
+  body section.panel-04 {
+    padding: 160px 0 0px 0;
+    margin-top: -60px; }
+    body section.panel-04 .end-wish {
+      position: relative;
+      bottom: 150px;
+      padding: 60px 0 60px 0;
+      background-color: orange;
+      transform: skew(0, 10deg);
+      color: white;
+      z-index: 2; }
+    body section.panel-04 .tele-pic04 {
+      width: 350px;
+      position: relative;
+      z-index: 4;
+      margin: 0 auto; }
+  body section.bg-primary {
+    background: blue url("../images/bg-primary.jpg") center center no-repeat;
+    background-size: cover; }
+  body section.bg-color {
+    background-color: orange; }
+  body section.bg-custom {
+    background: url("../images/bg-custom.jpg") center center no-repeat;
+    background-size: cover; }
+  body section .container.contSkew {
+    transform: skew(0, -10deg); }
+  body section .highlight {
+    background-color: #ffab57;
+    padding: 0 5px 0 5px; }
+  body section .number {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background-color: black;
+    background-clip: content-box;
+    border: 1px solid black;
+    padding: 5px;
+    color: white; }

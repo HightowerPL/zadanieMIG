@@ -1,0 +1,32 @@
+@font-face{
+  font-family: 'Bebas Neue Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('../fonts/Bebas Neue Bold'), url('BEBASNEUE BOLD.woff') format('woff');
+}
+
+body{
+  font-family: 'Bebas Neue';
+  text-align: center;
+  h1{
+    color: orange;
+  }
+  section{
+    button{
+      text-align: center;
+      font-family: 'Bebas Neue';
+      h2{
+        letter-spacing: 4px;
+        font-size: 30px;
+        margin: 0 0 5px 0;
+      }
+      p{
+        letter-spacing: 3px;
+        font-size: 20px;
+        margin: 5px 0 0 0;
+        padding: 0 20px 0 20px;
+      }
+    }
+
+  }
+}
