@@ -7,26 +7,36 @@
 
 body{
   font-family: 'Bebas Neue';
-  text-align: center;
-  h1{
-    color: orange;
-  }
-  section{
-    button{
-      text-align: center;
-      font-family: 'Bebas Neue';
-      h2{
-        letter-spacing: 4px;
-        font-size: 30px;
-        margin: 0 0 5px 0;
-      }
-      p{
-        letter-spacing: 3px;
-        font-size: 20px;
-        margin: 5px 0 0 0;
-        padding: 0 20px 0 20px;
-      }
-    }
+  text-align: left;
+  font-size: 22px;
+  line-height: 1.2;
 
+  h1{
+    font-size: 1.2em;
+    color: #ff7f00;
+    margin-bottom:0;
+  }
+  h2{
+    font-size: 1.3em;
+    letter-spacing: 4px;
+    margin:0;
+  }
+  .paragraph-primary{
+    margin-top:0;
+    margin-bottom: 5%;
+    font-size: 1em;
+  }
+  .paragraph-secondary{
+    margin-top:0;
+    font-size: 0.8em;
+  }
+  .paragraph-btn{
+    font-size: 1em;
+    letter-spacing: 3px;
+    margin: 0;
+  }
+  .acc-button{
+    text-align: center;
+    font-family: 'Bebas Neue';
   }
 }

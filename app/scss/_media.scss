@@ -1,0 +1,165 @@
+@media (min-width: 400px){
+  body{
+    font-size: 28px;
+    .slideIcon{
+      width: 60px;
+      height: 60px;
+    }
+  }
+}
+
+@media (min-width: 480px){
+  body{
+    font-size: 34px;
+    line-height: 1.2;
+    section{
+      .number{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+      }
+      &.panel-01{
+        .text-content{
+          .apple-store, .google-play{
+            width: 50%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 640px){
+  body{
+    font-size: 44px;
+    .slideIcon{
+      width: 70px;
+      height: 70px;
+    }
+    h2{
+      font-size: 28px;
+    }
+    .paragraph-btn{
+      font-size: 16px;
+    }
+  }
+}
+
+@media (min-width: 768px){
+  body{
+    font-size: 52px;
+    line-height: 1.25;
+    .slideIcon{
+      width: 90px;
+      height: 90px;
+    }
+    section{
+      .number{
+        width: 75px;
+        height: 75px;
+      }
+      &.panel-03{
+        img{
+          bottom: -20px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 980px){
+  body{
+    font-size: 66px;
+    .slideIcon{
+      width: 80px;
+      height: 80px;
+    }
+    h2{
+      font-size: 36px;
+    }
+    .paragraph-btn{
+      font-size:22px;
+    }
+    .acc-button{
+      padding: 1em 10em;
+    }
+    .slideIcon{
+      width: 90px;
+      height: 90px;
+    }
+    section{
+      .number{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+      }
+      &.panel-03{
+        figure{
+          bottom: -40px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1280px){
+  body{
+    font-size: 92px;
+    .slideIcon{
+      width: 100px;
+      height: 100px;
+    }
+    h2{
+      font-size: 48px;
+    }
+    .paragraph-btn{
+      font-size:32px;
+    }
+    section{
+      .number{
+        width: 125px;
+        height: 125px;
+      }
+      &.panel-01{
+        .text-content{
+          .apple-store, .google-play{
+            width: 40%;
+          }
+        }
+      }
+      &.panel-02{
+        .scan-code{
+          .content{
+            figure{
+              bottom: -40px;
+            }
+          }
+        }
+      }
+      &.panel-03{
+        .card-pic{
+          bottom: -50px;
+        }
+      }
+      &.panel-04{
+        .flex-container{
+          figure{
+            top: 70px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1920px){
+  body{
+    font-size: 100px;
+    .slideIcon{
+      width: 120px;
+      height: 120px;
+    }
+    section{
+    }
+  }
+}

@@ -1,8 +1,17 @@
 .acc-button{
-  padding: 15px 120px 15px 120px;
+  text-align: center;
+  margin: 2em 0 1em 0;
+  padding: 1em 5em;
   cursor: pointer;
-  color: orange;
-  background: white url('../images/acc-arrow.png') 80% center no-repeat;
+  color: #ff7f00;
+  background: white url('../images/acc-arrow.png') 85% center no-repeat;
   box-shadow: none;
   border:none;
+  animation: arrow-move 1s infinite;
+}
+
+.apple-store,.google-play{
+  cursor: pointer;
+  margin-bottom: 20px;
+  width: 80%;
 }

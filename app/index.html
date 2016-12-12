@@ -5,72 +5,87 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zadanie - MIG</title>
-    <link rel="stylesheet" href="css/styles.css"></link>
+    <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
     <img src="images/slide-icon.png" alt="slide-icon" class="slideIcon" />
-    <section class="panel-start bg-primary">
-      <div class="container">
-        <h1>
-          JUŻ JEST!
-        </h1>
-        <p>
-          Nowa aktualizacja SizeerApp, która jeszcze bardziej ułatwi zakupy w Sizeer!
-        </p>
-        <img src="images/app-store.png" class="apple-store" alt="App Store Button" />
-        <img src="images/google-play.png" class="google-play" alt="Google Play Button" />
-        <img src="images/tel00.png" alt="Telephone image" class="telePic"/>
-      </div>
-    </section>
-    <section class="panel-acc bg-color">
-      <div class="container contSkew">
-        <p>
-          Zaktualizuj swoją apkę i korzystaj z funkcji <span class="highlight">Twoja Cena i Ulubione</span>, które opracowaliśmy specjalnie dla Ciebie.
-        </p>
-        <button type="button" class='acc-button' name="button"><h2>AKTUALIZUJ</h2><p>do wersji 5.0</p></button>
-      </div>
-    </section>
     <section class="panel-01 bg-primary">
-      <div class="container">
-        <p class="number">
-          01
-        </p>
-        <p>
-          Po zaktualizowaniu aplikacji, wejdź w menu po lewej stronie i wybierz opcję „Twoja Cena”.
-        </p>
-        <img src="images/tel01.png" alt="Telephone01 image" class="telePic"/>
-      </div>
-    </section>
-    <section class="panel-02 bg-custom">
-      <div class="container contSkew">
-        <p class="number">02</p>
-        <p>
-          Zeskanuj kod kreskowy ze sneakerów, które Cię interesują.
-        </p>
-        <img src="images/tel02.png" alt="Telephone02 image" class="tele-pic02"/>
-      </div>
-    </section>
-    <section class="panel-03 bg-color">
-      <div class="container contSkew">
-        <p class="number">03</p>
-        <p>
-          Przed Tobą karta produktu – po prawej stronie widzisz Twoją Cenę, uwzględniającą rabat aktualnie dostępny na Twojej karcie SizeerClub. Produkty możesz dodać do zakładki „Ulubione”.
-        </p>
-        <img src="images/card.png" alt="Telephone03 image" class="card-pic"/>
-      </div>
-    </section>
-    <section class="panel-04 bg-primary">
-        <p class="number">04</p>
-        <p>
-          W menu po lewej stronie znajdziesz zakładkę „Ulubione” – a w niej produkty, które spodobały Ci się najbardziej.
-        </p>
-        <img src="images/tel04.png" alt="Telephone04 image" class="tele-pic04"/>
-        <div class="end-wish bg-color">
-          <div class="container contSkew">
-            <h2>UDANYCH ZAKUPÓW!</h2>
-            <button type="button" class='acc-button' name="button"><h2>AKTUALIZUJ</h2><p>do wersji 5.0</p></button>
-          </div>
+      <div class="flex-container">
+        <div class="text-content slide-in-left">
+          <h1>
+            JUŻ JEST!
+          </h1>
+          <p class="paragraph-primary">
+            Nowa aktualizacja SizeerApp, która jeszcze bardziej ułatwi zakupy w Sizeer!
+          </p>
+          <img src="images/app-store.png" class="apple-store" alt="App Store Button" />
+          <img src="images/google-play.png" class="google-play" alt="Google Play Button" />
         </div>
+        <figure><img src="images/tel00.png" alt="Telephone image" class="telePic slide-in-right"/></figure>
+      </div>
+      <div class="actual-app bg-color">
+        <div class="content fade-in-block">
+          <p class="paragraph-primary">
+            Zaktualizuj swoją apkę i korzystaj z funkcji <span class="highlight">Twoja Cena i Ulubione</span>, które opracowaliśmy specjalnie dla Ciebie.
+          </p>
+          <button type="button" class='acc-button' name="button"><h2>AKTUALIZUJ</h2><p class="paragraph-btn">do wersji 5.0</p></button>
+        </div>
+      </div>
     </section>
+
+    <section class="panel-02">
+      <div class="your-price flex-container bg-primary">
+        <figure><img src="images/tel01.png" alt="Telephone01 image" class="telePic fade-in-block"/></figure>
+        <div class="text-content fade-in-block">
+          <p class="number paragraph-secondary">01</p>
+          <p class="paragraph-secondary">
+            Po zaktualizowaniu aplikacji, wejdź w menu po lewej stronie i wybierz opcję „Twoja Cena”.
+          </p>
+        </div>
+      </div>
+      <div class="scan-code bg-custom">
+        <div class="content flex-container">
+          <div class="text-content fade-in-block">
+            <p class="number paragraph-secondary">02</p>
+            <p class="paragraph-secondary">
+              Zeskanuj kod kreskowy ze sneakerów, które Cię interesują.
+            </p>
+          </div>
+          <figure><img src="images/tel02.png" alt="tel-img" class="tele-pic02 slide-in-bottom"/></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel-03 bg-color">
+      <div class="flex-container">
+        <div class="text-content fade-in-top">
+          <p class="number paragraph-secondary">03</p>
+          <p class="paragraph-secondary">
+            Przed Tobą karta produktu – po prawej stronie widzisz Twoją Cenę, uwzględniającą rabat aktualnie dostępny na Twojej karcie SizeerClub. Produkty możesz dodać do zakładki „Ulubione”.
+          </p>
+        </div>
+      </div>
+      <img src="images/card.png" alt="tel-img" class="card-pic fade-in-block"/>
+    </section>
+
+    <section class="panel-04 bg-primary">
+      <div class="flex-container">
+        <div class="text-content fade-in-block">
+          <p class="number paragraph-secondary" >04</p>
+          <p class="paragraph-secondary">
+            W menu po lewej stronie znajdziesz zakładkę „Ulubione” – a w niej produkty, które spodobały Ci się najbardziej.
+          </p>
+        </div>
+        <figure><img src="images/tel04.png" alt="tel-img" class="tele-pic04"/></figure>
+      </div>
+      <div class="end-wish bg-color">
+        <div class="flex-container contSkew fade-in-block">
+          <h1>udanych zakupów!</h1>
+          <button type="button" class='acc-button' name="button"><h2>AKTUALIZUJ</h2><p class="paragraph-btn">do wersji 5.0</p></button>
+        </div>
+      </div>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
   </body>
 </html>

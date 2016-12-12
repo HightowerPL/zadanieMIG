@@ -1,136 +1,225 @@
-@import "variables";
+@import 'animations';
 @import "fonts";
 @import "buttons";
 
-html, body{
+html,body{
+  padding: 0;
   margin: 0;
-  padding:0;
-  height: 100%;
-  width: 100%;
+  min-width: 100%;
+}
+
+.slideIcon{
+  position: fixed;
+  width:50px;
+  height: 50px;
+  top: 3%;
+  right: 3%;
+  animation: slide-move 2s linear infinite;
+  z-index: 999999;
+}
+//Background classes
+.bg-primary{
+  background: url('../images/bg-primary.jpg') center center no-repeat fixed;
+  background-size: cover;
+}
+.bg-color{
+  background-color: #ff7f00;
+  color: white;
+}
+.bg-custom{
+  background: url('../images/bg-custom2.jpg') center center no-repeat;
+  background-size: cover;
+  color: white;
 }
 
 body{
-  .slideIcon{
-    position: fixed;
-    top: 10px;
-    right: 10px;
-    z-index: 999999;
+  figure{
+    margin:0;
+    width: 50%;
+    position: relative;
   }
   section{
+    width: 100%;
     position: relative;
-    &.panel-start{
-      padding: 40px 0 0 0;
-      margin-bottom: -40%;
-      .apple-store,.google-play{
-        cursor: pointer;
-      }
-      .telePic{
-        width: 350px;
-        margin: 0 auto;
-        position: relative;
-      }
+    .text-content{
+      padding-left: 5%;
+      padding-right: 5%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
     }
-    &.panel-acc{
-      padding: 40px 0 70px 0;
-      transform: skew(0,10deg);
-      color: white;
-      z-index:2;
-    }
-    &.panel-01{
-      margin: -80px auto -80px auto;
-      padding: 120px 0 0 0;
-      .telePic{
-        width: 350px;
-        margin: 0 auto;
-      }
-    }
-    &.panel-02{
-      padding: 40px 0 0 0;
-      color: white;
-      transform: skew(0,10deg);
-      .tele-pic02{
-        margin: 0 auto;
-        position: relative;
-        right: 10px;
-      }
-      .number{
-        color: black;
-        background-color: white;
-        border-color: white;
-      }
-    }
-    &.panel-03{
-      transform: skew(0,10deg);
-      color: white;
-      z-index:2;
-      margin-top: -40px;
-      padding: 40px 0 0 0;
-      overflow: hidden;
-      .number{
-        color: orange;
-        background-color: white;
-        border-color: white;
-      }
-      .card-pic{
-        width: 100%;
-        position: relative;
-        bottom: -60px;
-        margin:0 auto;
-      }
-    }
-    &.panel-04{
-      padding: 160px 0 0px 0;
-      margin-top: - 60px;
-      .end-wish{
-        position: relative;
-        bottom: 150px;
-        padding: 60px 0 60px 0;
-        background-color: orange;
-        transform: skew(0,10deg);
-        color: white;
-        z-index:2;
-      }
-      .tele-pic04{
-        width: 350px;
-        position: relative;
-        z-index:4;
-        margin: 0 auto;
-      }
-    }
-    &.bg-primary{
-      background: blue url('../images/bg-primary.jpg') center center no-repeat;
-      background-size: cover;
-    }
-    &.bg-color{
-      background-color: orange;
-    }
-    &.bg-custom{
-      background: url('../images/bg-custom.jpg') center center no-repeat;
-      background-size: cover;
-    }
-    .container{
+    .flex-container{
+      padding-left: 10px;
+      padding-right: 10px;
+      display: flex;
+      position: relative;
       &.contSkew{
         transform: skew(0, -10deg);
       }
     }
-    .highlight{
-      background-color: #ffab57;
-      padding: 0 5px 0 5px;
-    }
     .number{
-      margin: 0 auto;
       display: flex;
       justify-content: center;
       align-items: center;
       vertical-align: middle;
-      width: 100px;
-      height: 100px;
-      border-radius: 50px;
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
       background-color: black;
       background-clip: content-box;
       border: 1px solid black;
+      margin:0;
+      margin-bottom: 0.5em;
       padding: 5px;
       color: white;
     }
+    &.panel-01{
+      padding: 20px 0 0 0;
+      .text-content{
+        width: 50%;
+      }
+      figure{
+        width:50%;
+        height: auto;
+        margin: 0 auto;
+        position: relative;
+        .telePic{
+          width: 100%;
+        }
+      }
+      .actual-app{
+        transform: skew(0,10deg);
+        position: relative;
+        z-index: 500;
+        margin: -15% 0;
+        color: white;
+        padding-top: 12%;
+        padding-bottom: 10%;
+        .content{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-between;
+          padding: 0 5%;
+          transform: skew(0, -10deg);
+          .paragraph-primary{
+            text-align: left;
+            margin-bottom: 0;
+            .highlight{
+              background-color: #ffab57;
+              padding: 0 5px 0 5px;
+              //animation: highlight 1s infinite;
+            }
+          }
+        }
+      }
+    }
+    &.panel-02{
+      .your-price{
+        padding-top: 10%;
+        padding-bottom: 10%;
+        figure{
+          width: 50%;
+          position: relative;
+          z-index: 600;
+          .telePic{
+            width: 100%;
+          }
+        }
+        .text-content{
+          justify-content: center;
+          width: 50%;
+        }
+      }
+      .scan-code{
+        position: relative;
+        z-index: 700;
+        margin: -15% 0;
+        padding: 10% 0;
+        transform: skew(0, 10deg);
+        .content{
+          transform: skew(0, -10deg);
+          .text-content{
+            justify-content: flex-start;
+            padding-bottom: 20px;
+            width: 40%;
+            .number{
+              margin-bottom: 10px;
+              color: black;
+              background-color: white;
+              border-color: white;
+            }
+          }
+          figure{
+            bottom: -20px;
+            width: 60%;
+            .tele-pic02{
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+    &.panel-03{
+      margin: -15% 0;
+      overflow: hidden;
+      position: relative;
+      z-index: 800;
+      transform: skew(0, 10deg);
+      .flex-container{
+        transform: skew(0, -10deg);
+        flex-direction: column;
+        padding: 0;
+        padding-top: 10%;
+        .text-content{
+          .number{
+            color: #ff7f00;
+            background-color: white;
+            border-color: white;
+          }
+        }
+      }
+      img{
+        position: relative;
+        bottom: -10px;
+        width: 100%;
+      }
+    }
+    &.panel-04{
+      overflow:hidden;
+      padding-top: 30%;
+      .text-content{
+        width: 40%;
+      }
+      figure{
+        width: 60%;
+        position: relative;
+        z-index:4;
+        .tele-pic04{
+          position: relative;
+          right: -100%;
+          opacity: 0;
+          width:100%;
+        }
+      }
+      .end-wish{
+        position: relative;
+        bottom: 80px;
+        padding: 80px 0 60px 0;
+        background-color: #ff7f00;
+        transform: skew(0,10deg);
+        z-index:2;
+        .flex-container{
+          flex-direction: column;
+          align-items:center;
+          h1{
+            color: white;
+          }
+        }
+      }
+    }
   }
 }
+
+@import "media";
