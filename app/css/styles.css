@@ -46,10 +46,10 @@
   opacity: 0; }
 
 @font-face {
-  font-family: 'Bebas Neue Bold';
+  font-family: 'Bebas Neue';
   font-style: normal;
   font-weight: normal;
-  src: local("../fonts/Bebas Neue Bold"), url("BEBASNEUE BOLD.woff") format("woff"); }
+  src: url("../fonts/BEBASNEUE BOLD.woff") format("woff"); }
 
 body {
   font-family: 'Bebas Neue';
