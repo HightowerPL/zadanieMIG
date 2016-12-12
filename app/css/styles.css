@@ -78,6 +78,8 @@ body {
   body .acc-button {
     text-align: center;
     font-family: 'Bebas Neue'; }
+  body section .end-wish h1 {
+    font-size: 1.4em; }
 
 .acc-button {
   text-align: center;
