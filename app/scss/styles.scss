@@ -178,11 +178,14 @@ body{
             background-color: white;
             border-color: white;
           }
+          p:last-child{
+            margin-bottom:0;
+          }
         }
       }
       img{
         position: relative;
-        bottom: -10px;
+        bottom: -1em;
         width: 100%;
       }
     }

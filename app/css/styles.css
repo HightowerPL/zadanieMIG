@@ -45,6 +45,11 @@
   bottom: -100%;
   opacity: 0; }
 
+.fade-in-left {
+  position: relative;
+  opacity: 0;
+  left: -50%; }
+
 @font-face {
   font-family: 'Bebas Neue';
   font-style: normal;
@@ -242,9 +247,11 @@ body section {
         color: #ff7f00;
         background-color: white;
         border-color: white; }
+      body section.panel-03 .flex-container .text-content p:last-child {
+        margin-bottom: 0; }
     body section.panel-03 img {
       position: relative;
-      bottom: -10px;
+      bottom: -1em;
       width: 100%; }
   body section.panel-04 {
     overflow: hidden;
